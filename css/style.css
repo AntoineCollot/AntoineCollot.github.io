@@ -36,7 +36,7 @@ body {
 .offcanvas #page:after {
   -webkit-transition: 2s;
   -o-transition: 2s;
-  transition: 2s;
+  transition: 2s;h1
   position: absolute;
   top: 0;
   right: 0;
@@ -64,7 +64,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, figure {
-  color: #000;
+  color: #ea7659;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -72,17 +72,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #cabcab;
+  background: #ea7659;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #cabcab;
+  background: #ea7659;
 }
 
 ::selection {
   color: #fff;
-  background: #cabcab;
+  background: #ea7659;
 }
 
 .fh5co-nav {
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   padding: 25px 0;
   z-index: 1;
-  background: #edebe8;
+  background: #f2ede5aa;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav .fh5co-top-logo,
 .fh5co-nav .fh5co-top-menu,
 .fh5co-nav .fh5co-top-social {
+    white-space: nowrap;
   float: left;
 }
 .fh5co-nav .fh5co-top-logo {
@@ -114,7 +115,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 20%;
 }
 .fh5co-nav #fh5co-logo {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -135,7 +136,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav a {
   padding: 5px 0;
-  color: #000;
+  color: #828282;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
@@ -199,7 +200,7 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 2px;
   font-size: 12px;
   padding: 30px 10px;
-  color: rgba(0, 0, 0, 0.9);
+  color: #828282;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -512,7 +513,7 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 1;
 }
 .work:hover .desc h3 a, .work:focus .desc h3 a {
-  color: #cabcab;
+  color: #ea7659;
 }
 
 .top-line {
@@ -573,7 +574,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000;
+  color: #ea7659;
 }
 .fh5co-heading h3 {
   font-size: 18px;
@@ -1065,21 +1066,21 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #cabcab;
+  background: #ffc97c;
   color: #fff;
-  border: 2px solid #cabcab;
+  border: 2px solid #ffc97c;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #d4c8bb !important;
-  border-color: #d4c8bb !important;
+  background: #ea7659 !important;
+  border-color: #ea7659 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #cabcab;
-  border: 2px solid #cabcab;
+  color: #ffc97c;
+  border: 2px solid #ffc97c;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #cabcab;
+  background: #ffc97c;
   color: #fff;
 }
 
