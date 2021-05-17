@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AntoineCollot &mdash; Portfolio website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Portfolio website" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="AntoineCollot" />
+
+        <!-- 
+//////////////////////////////////////////////////////
+
+FREE HTML5 TEMPLATE 
+DESIGNED & DEVELOPED by FreeHTML5.co
+
+Website: 		http://freehtml5.co/
+Email: 			info@freehtml5.co
+Twitter: 		http://twitter.com/fh5co
+Facebook: 		https://www.facebook.com/fh5co
+
+//////////////////////////////////////////////////////
+-->
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="/css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="/css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="/js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+    <body>
+
+        <div class="fh5co-loader"></div>
+
+        <div id="page">
+            <nav class="fh5co-nav" role="navigation">
+                <div class="container">
+                    <div class="fh5co-top-logo">
+                        <div id="fh5co-logo"><a href="index.html">Antoine Collot</a></div>
+                    </div>
+                    <div class="fh5co-top-menu menu-1 text-center">
+                        <ul>
+                            <li><a href="/index.html">Work</a></li>
+                            <li><a href="/about.html">Profile</a></li>
+                        </ul>
+                    </div>
+                    <div class="fh5co-top-social menu-1 text-right">
+                        <ul class="fh5co-social">
+                            <li><a href="https://yorsh.itch.io/"><i class="icon-game-controller"></i></a></li>
+                            <li><a href="https://github.com/AntoineCollot"><i class="icon-github"></i></a></li>
+                            <li><a href="https://twitter.com/LonelyYorsh"><i class="icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="fh5co-author">
+                <div class="container">
+                    <div class="row top-line animate-box">
+                        <div class="col-md-6 col-md-offset-3 fh5co-heading">
+                            <h2>Leave Me Alone</h2>
+                            <p>A small mobile game where you avoid messages by typing frenetically on the keyboard. It used to be available on the Google Play Store and the Windows Phone play store.</p>
+
+                            <div class="role">
+                                <h3>Key points</h3>
+                                <ul>
+                                    <li>Unity</li>
+                                    <li>Android</li>
+                                    <li>Windows Phone</li>
+                                </ul>
+                            </div>
+                            <a href="/index.html" class="btn btn-primary btn-outline"><i class="icon-download"></i> Windows store page</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/eU8tdrpp01I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="testimony animate-box">
+                                <h2>The Game</h2>
+                                <p>In this simple mobile game, the player is the cursor. He has to avoid the sms/messages falling from the top of the screen. Since the player is the cursor, the only way to move is to type or delete a message.</p>
+                                <p>The content of the message is automatic and doesn't depend on the key pressed by the player. The content of the sms doesn't matter as well, they have to be avoided no mater what it says.</p>
+                            </div>
+                            <p class="animate-box"><img src="/images/leavemealone/start.jpg" alt="BQA Caspule" class="img-responsive" width = "50%"></p>
+                            <div class="testimony animate-box">
+                                <h2>The player's message</h2>
+                                <p>The game writes the message in place of the player. I wanted the message to change as often as possible, so every time the player avoids a sms, it feels like he is coming up with a new excuse.</p>
+                                <p>To do this, I stored the possible messages in a tree. When the player starts typing something, it starts at the root of the tree, and select a branch. This branch may contain a word or two, and when those words have been typed, it has to select another branch etc. This way, each time the user type a message, the game may not select the same branches, and thus the message typed may be different from the last one. It aso allow the message to change in the middle of the sentance, since the choices are made for each words, and not for the sentance as a whole. Finally, to add even more diversity, each branch actually stores multiple possibilities, and pick one randomly, so the words can be different even if the game took two times the same path in the tree.</p>
+                                <p>In order to facilitate the creation of the tree, I made a tool that displays the tree with nodes and links, and allow the edition and creation of nodes. The resulting tree is then stored in a txt file, serialized in the same way as the main application.</p>
+                            </div>
+                            <p class="animate-box"><img src="/images/leavemealone/treebuilder.jpg" alt="BQA Caspule" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                                <h2>Design choices</h2>
+                                <h4>The font</h4>
+                                <p>The font used for the player's message has to be monospaced (all characters are the same width) so user knows exactly which distance the cursor is going to move when he presses a button (it doesn't depend on the letter being typed, since they all have the same width).</p>
+                                <h4>Cursor-Character</h4>
+                                <p>To help the player understand that he is playing as the cursor, I make it looks like a little man. It is important that it still looked like a cursor, otherwise it would be confusing, so I made it looks like a cursor when standing still (arms, legs and body in a line), and like a man when moving.</p>
+                            </div>
+                            <p class="animate-box"><img src="/images/leavemealone/LeaveMeAlone_Entrance_Walk.gif" alt="BQA Caspule" class="img-responsive" width = "50%"></p>
+                            <div class="testimony animate-box">
+                                <h4>The Virtual Keyboard</h4>
+                                <p>For the keyboard, the size of the letter keys didn't really matter (since any key can be pressed to type), but the delete button had to be big enough, since it's the only button that does something different. It also had to be around the same size as the letter keys, or it would not look like an actual keyboard. I chose to use an old phone keyboard design (multi-tap) so I could keep the delete key the same size as the letter keys, while keeping the keyboard small enough at the bottom of the screen. The delete key is usually at the bottom right of the keyboard, but in my case it was the most important key, so I moved it to the top right, so it is much easier to press with the thumb.</p>
+                                  <h4>The Entrance Animation</h4>
+                                <p>Instead of telling the user how to play with a text or tutorial, I chose to show how the game works with the transition animation. When the player hits the play button, a message is typed in the input field : "Enter your message". The first things it does is telling the player that he has to type something, so it's going to involve pressing keys. It also place the cursor at the middle of the screen, instead of being hidden at the left of the screen.</p>
+                                <p>The cursor itself plays an animation, for example running in position. This helps the player to understand that he is playing as the cursor, since it's the only character on screen, and it appears right when he hits play.</p>
+                                <p>When the cursor is in place at the end of the message, the message is untyped letter by letter, which shows that the cursor follow the text, and that's how you move it.</p>
+                                <p>Finally, the first sms that spawns always says "Avoid the sms".</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row row-pt-md portfolio-navigation">
+                            <div class="col-xs-4 text-left">
+                                <a href="/index.html" class="btn btn-primary btn-outline"><i class="icon-chevron-left"></i> Prev </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        </div>
+
+        <!-- jQuery -->
+        <script src="/js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="/js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="/js/jquery.waypoints.min.js"></script>
+        <!-- Main -->
+        <script src="/js/main.js"></script>
+    </body>
+</html>
+
