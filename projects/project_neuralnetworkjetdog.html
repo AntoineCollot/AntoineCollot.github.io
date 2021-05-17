@@ -85,41 +85,49 @@ Facebook: 		https://www.facebook.com/fh5co
                 <div class="container">
                     <div class="row top-line animate-box">
                         <div class="col-md-6 col-md-offset-3 fh5co-heading">
-                            <h2>Board Quizz Adventure</h2>
-                            <p>Small party game published on Steam.</p> <p>It's perfect to be played while having a drink with friends. There are two teams, each team controls one of the two characters. The goal is to reach the village first. Fields and forests blocks the way, to clear the path you have to answer a question.</p>
+                            <h2>Neural Network Jet Dog</h2>
+                            <p>A simple game playable with a single button. I then made a neural network from scratch that should learn to master the game.</p>
 
                             <div class="role">
                                 <h3>Key points</h3>
                                 <ul>
-                                    <li>Complete game</li>
-                                    <li>Published on Steam</li>
+                                    <li>Unity game</li>
+                                    <li>Neural network</li>
+                                    <li>Genetic algorithm</li>
                                 </ul>
                             </div>
-
-                            <iframe src="https://store.steampowered.com/widget/1032440/" frameborder="0" width="646" height="190"></iframe>
+                            <a href="/index.html" class="btn btn-primary btn-outline"><i class="icon-download"></i> Download the game</a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <p class="animate-box"><img src="/images/boardquizzadventure/capsule.jpg" alt="BQA Caspule" class="img-responsive" width = "100%"></p>
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/zF9d5sBos4U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             <div class="testimony animate-box">
-                                <h2>Accessibility</h2>
-                                <p>I wanted this game to be accessible to everyone, much like a simple board game. So most of the game behave just like any question-based board game, but the video-game part makes it possible that the game be a race between the two teams, which would be hard to replicate with a board game. This makes that everyone gets what the game is about instantly, but the game feels fresh and new. Also, only one player per team controls the character and has to hold a controller, all other players play by answering the questions or finding a shorter path, which everyone can do.</p>
+                                <h2>The Mini Game</h2>
+                                <p>I wanted the game to have a single true or false, to make the output of the network as simple as possible (a single boolean). I made a kind of flappy bird game, except that you hold the input to add more vertical force to the character, instead of tapping to jump. The obstacles are random and different every game.</p>
+                                <p>The game is very easy to make, but I didn't realize that I had to have a kind of speed up process before trying the network on it. In the first version of the game, it was running based on the Unity Update function, which works great for a game made for humans. This game however needs to be playable by the computer as fast as possible, without wasting time updating the sprites on the screen. So I remade the game, this time with my own update function, that waits for the screen to refresh or not, depending on whether a human or the computer is playing.</p>
                             </div>
-                            <p class="animate-box"><img src="/images/boardquizzadventure/Screenshot_00.jpg" alt="BQA Caspule" class="img-responsive" width = "100%"></p>
+                            <p class="animate-box"><img src="/images/neuralnetworkjetdog/network.jpg" alt="BQA Caspule" class="img-responsive" width = "100%"></p>
                             <div class="testimony animate-box">
-                                <h2>Tutorial</h2>
-                                <p>I chose to make the tutorial as short as possible, even if it means not going in depth. Since it's ~1 minutes long, the player can just replay it a few times if he doesn't quite get it the first time. The main job of the tutorial is to help the owner of the game explain it to people that play for the first time, which is going to happen many times.</p>
+                                <h2>Neural Network</h2>
+                                <p>I made my own neural network based on general explanations of the concept, so by figuring things out by myself I could better understand how it works at its core. The resulting network may not be optimized in any way, but it worked pretty much first try and runs fine.</p>
+                                <p>The network can have a variable number of layers and neurons by layer. I used a step as propagation function, since my game is really simple and linear.</p>
                             </div>
-                            <p class="animate-box"><img src="/images/boardquizzadventure/BQA_Tuto.gif" alt="BQA Caspule" class="img-responsive" width = "100%"></p>
+                            <p class="animate-box"><img src="/images/neuralnetworkjetdog/unity.jpg" alt="BQA Caspule" class="img-responsive" width = "100%"></p>
                             <div class="testimony animate-box">
-                                <h2>Map Mechanics</h2>
-                                <p>There are 6 types of maps : Basic, Moving Platforms, Sheeps, Crows, Wolves and Lumberjacks. The game always start by playing 3 basic maps, and then it plays 3 maps of a random type of map, and then 3 of another one and so on. The first of the 3 maps is always an introdution map to the mechanic, the second one is a bit more complex, and the last one push the mechanic even further. 3 maps of each kind at a time ensure that players gets to see new things, while letting them the time to improve their usage of the mechanic.</p>
+                                <h2>Training : Genetic Algorithme</h2>
+                                <p>I used a very intuitive genetic algorithme for training. As for the network itself, I tried making my own thing based on my understanding of the concept. I simply applied the natural selection and evolution processes to my network.</p>
+                                <p>The algorithme first starts by making a pool of random individuals (random neurons' weigths). Each individual plays the game and get a score (stay alive time). The individuals that scored the lowest are killed (natural selection). Some of the survivors are mutated at random (some of their weights are modified), then the breeding process replace the deads by new children. To create a child, two random individuals are picked, and each weight of the child is taken from either one of the parents at random. From there it loops back to the beginning and make the individuals play the game again, until one individual reach the target score.</p>
                             </div>
-                            <p class="animate-box"><img src="/images/boardquizzadventure/lumberjack_intro.jpg" alt="BQA Caspule" class="img-responsive" width = "100%"></p>
+                            <p class="animate-box"><img src="/images/neuralnetworkjetdog/ai.jpg" alt="BQA Caspule" class="img-responsive" width = "100%"></p>
                             <div class="testimony animate-box">
-                                <h2>Teaching the mechanics</h2>
-                                <p>The map mechanics are not part of the tutorial. Instead the first first map they appear on is designed to help players understand how they work. For example on the first lumberjack map, the lumberjacks are on the easiest path (obvious even without knowing what they do), and when the player answers their question they get to see what lumberjacks do.</p>
+                                <h2>Inputs</h2>
+                                <p>To detect the obstacles, the ai takes in inputs a bunch of raycast at different angles in front of it. The value returned by the raycast and taken as input by the ai is the distance of the obstacle in this direction. This way, the ai doesn't "cheat", it doesn't know where the gap in the obstacles is exactly, it can see as a human player would.</p>
+                            </div>
+                            <p class="animate-box"><img src="/images/neuralnetworkjetdog/ingame_death.jpg" alt="BQA Caspule" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                                <h2>Results</h2>
+                                <p>It tooks 600 generations on a population of 500 to obtain an individual that could play the game perfectly. That's ~4 hours on my (slow) computer. This could be improved with a better training algorithme, better settings (size of population, mutation rate etc.), a smarter scoring system (when the individuals are getting better at the game, it takes more time for them to loose so it slows down the process), or by running the training on the GPU instead of the CPU.</p>
                             </div>
                         </div>
 
