@@ -456,6 +456,15 @@ h1, h2, h3, h4, h5, h6, figure {
 .work {
   margin-bottom: 40px;
 }
+
+.filter {
+    display: none;
+}
+
+.show {
+      display: block;
+}
+
 .work .work-grid {
   background-size: cover;
   background-position: center center;
@@ -467,6 +476,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 .work .work-grid .inner {
   display: table;
   height: 300px;
@@ -1084,6 +1094,10 @@ h1, h2, h3, h4, h5, h6, figure {
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
   background: #ea7659;
   color: #fff;
+}
+.btn-primary.toggled {
+    background: #ea7659;
+    color: #fff;
 }
 
 .btn-success {
