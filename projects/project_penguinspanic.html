@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AntoineCollot &mdash; Portfolio website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Portfolio website" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="AntoineCollot" />
+
+        <!-- 
+//////////////////////////////////////////////////////
+
+FREE HTML5 TEMPLATE 
+DESIGNED & DEVELOPED by FreeHTML5.co
+
+Website: 		http://freehtml5.co/
+Email: 			info@freehtml5.co
+Twitter: 		http://twitter.com/fh5co
+Facebook: 		https://www.facebook.com/fh5co
+
+//////////////////////////////////////////////////////
+-->
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="/css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="/css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="/js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+    <body>
+
+        <div class="fh5co-loader"></div>
+
+        <div id="page">
+            <nav class="fh5co-nav" role="navigation">
+                <div class="container">
+                    <div class="fh5co-top-logo">
+                        <div id="fh5co-logo"><a href="/index.html">Antoine Collot</a></div>
+                    </div>
+                    <div class="fh5co-top-menu menu-1 text-center">
+                        <ul>
+                            <li><a href="/index.html">Work</a></li>
+                            <li><a href="/about.html">Profile</a></li>
+                        </ul>
+                    </div>
+                    <div class="fh5co-top-social menu-1 text-right">
+                        <ul class="fh5co-social">
+                            <li><a href="https://yorsh.itch.io/"><i class="icon-game-controller"></i></a></li>
+                            <li><a href="https://github.com/AntoineCollot"><i class="icon-github"></i></a></li>
+                            <li><a href="https://twitter.com/LonelyYorsh"><i class="icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="fh5co-author">
+                <div class="container">
+                    <div class="row top-line animate-box">
+                        <div class="col-md-6 col-md-offset-3 fh5co-heading">
+                            <h2>Penguins Panic</h2>
+                            <h3 class="uppercase">Extra Credits Game Jam #6 (72h) - Theme : Take care + Social distancing</h3>
+                            <p>My submission for the Extra Credits Game Jam #6. I had 72h to make this game. I thought of a mechanic where you would have to space penguins correctly in between them so they don't get too cold or too hot.</p>
+                            <div class="row">
+                                <div class="col-md-2" ><img src="/images/penguinspanic/PenguinLoop.gif" alt="in game" class="img-responsive"></div>
+                                <div class="role col-md-4 mt-auto">
+                                    <h3>Key points</h3>
+                                    <ul>
+                                        <li>Unity</li>
+                                        <li>Game Jam</li>
+                                        <li>Made in 72h</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://itch.io/jam/extra-credits-game-jam-6/rate/738051" class="btn btn-primary btn-outline"><i class="icon-game-controller"></i> Game Jam page</a>
+                            <a href="https://yorsh.itch.io/penguinspanic" class="btn btn-primary btn-outline"><i class="icon-download"></i> Play the game</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/WZkanOlahwY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="testimony animate-box">
+                                <h2>Theme : Take Care</h2>
+                                <p>This jam had an extra challenge with an additionnal theme "Social Distancing". I immediatly tought of a group a penguins, that have to get close to each others to produce heat. By adding the possibility that they could get too hot and have to be spread apart from each other, I created a mechanic that kind of feet both themes. I went for the simplest implementation, being that the player can pick up a penguin and drags it wherever they wants.</p>
+                                <p>To force the player to constantly move penguins around, I made the ambiant temperature change over time. This makes that the penguins aren't always confortable at the same distance. In addition, the ice moves and force the player to use difference spaces.</p>
+                            </div>
+                            <p class="animate-box"><img src="/images/penguinspanic/penguinspanic_ingame.jpg" alt="in game" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                                <h2>Implementation</h2>
+                                <p>This game raised a bunch of interesting challenges. First the ice had to move or evolve, I used marching cubes to do this. Then I had a lot of shader works to create good looking ice and water. Finally I had to figure a way to compute the temperature of each penguin. I ended up placing them in a grid and counting how many penguins were in the same cell and/or in neighbour cells. I was a bit late on the polish so it couldn't do everything I wanted, but I managed to get the ice and water to look very good.</p>
+                            </div>
+                        </div>
+                        <div class="row row-pt-md portfolio-navigation">
+                            <div class="col-xs-4 text-left">
+                                <a href="/index.html" class="btn btn-primary btn-outline"><i class="icon-chevron-left"></i> Prev </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        </div>
+
+        <!-- jQuery -->
+        <script src="/js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="/js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="/js/jquery.waypoints.min.js"></script>
+        <!-- Main -->
+        <script src="/js/main.js"></script>
+    </body>
+</html>
+
