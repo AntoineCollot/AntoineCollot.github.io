@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AntoineCollot &mdash; Portfolio website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Portfolio website" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="AntoineCollot" />
+
+        <!-- 
+//////////////////////////////////////////////////////
+
+FREE HTML5 TEMPLATE 
+DESIGNED & DEVELOPED by FreeHTML5.co
+
+Website: 		http://freehtml5.co/
+Email: 			info@freehtml5.co
+Twitter: 		http://twitter.com/fh5co
+Facebook: 		https://www.facebook.com/fh5co
+
+//////////////////////////////////////////////////////
+-->
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="/css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="/css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="/js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+    <body>
+
+        <div class="fh5co-loader"></div>
+
+        <div id="page">
+            <nav class="fh5co-nav" role="navigation">
+                <div class="container">
+                    <div class="fh5co-top-logo">
+                        <div id="fh5co-logo"><a href="/index.html">Antoine Collot</a></div>
+                    </div>
+                    <div class="fh5co-top-menu menu-1 text-center">
+                        <ul>
+                            <li><a href="/index.html">Work</a></li>
+                            <li><a href="/about.html">Profile</a></li>
+                        </ul>
+                    </div>
+                    <div class="fh5co-top-social menu-1 text-right">
+                        <ul class="fh5co-social">
+                            <li><a href="https://yorsh.itch.io/"><i class="icon-game-controller"></i></a></li>
+                            <li><a href="https://github.com/AntoineCollot"><i class="icon-github"></i></a></li>
+                            <li><a href="https://twitter.com/LonelyYorsh"><i class="icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="fh5co-author">
+                <div class="container">
+                    <div class="row top-line animate-box">
+                        <div class="col-md-6 col-md-offset-3 fh5co-heading">
+                            <h2>Life On Mars</h2>
+                            <h3 class="uppercase">Ludum Dare 50 Compo (48h) - Theme : Delay The Inevitable</h3>
+                            <p>My submission for the Ludum Dare 50 Compo. I had 48h to make this game. I went for a fairly realistic 3D scene with 2D gameplay happening in it.</p>
+
+                            <div class="role">
+                                <h3>Key points</h3>
+                                <ul>
+                                    <li>Unity</li>
+                                    <li>Game Jam</li>
+                                    <li>Made in 48h</li>
+                                </ul>
+                            </div>
+                            <a href="https://ldjam.com/events/ludum-dare/50/into-the-light" class="btn btn-primary btn-outline"><i class="icon-game-controller"></i> Game Jam page</a>
+                            <a href="https://yorsh.itch.io/into-the-light" class="btn btn-primary btn-outline"><i class="icon-download"></i> Play the game</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/ZRYeEHiVkPQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="testimony animate-box">
+                                <h2>Theme : Delay The Inevitable</h2>
+                                <p>The most obvious way to tackle the theme to me is to survive endless waves of monsters. I also wanted to avoid focusing on the inevitable thing being that the player eventually looses, as it feels weak and uninspired since any game with some kind of score would fit the theme this way.</p>
+                                <p>I tried to think of something a bit unique that feels inevitable that I could base the game around. I ended up going for insects being attracted to lights and burning themself. The game would be based on drawing the insects away from the lights.</p>
+                            </div>
+             
+                            <p class="animate-box"><img src="/images/intothelight/Screenshot_06.png" alt="IntoTheLight Gameplay" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                            <h2>Boids</h2>
+                                <p>To create the mosquitoes AI, I used boids with some additionnal rules. One rule to make them be attracted by the player, and another to make them attracted by lights. They also have 2 sets of weights for each rule, one for when the player is close and one when the player is far away. This allows for them to group together more closely nearby the player, and spread when the player goes away.</p>
+                            </div>
+                   
+                            <p class="animate-box"><img src="/images/intothelight/IntoTheLightBoids.gif" alt="IntoTheLight Early Progress" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                            <h2>Scene</h2>
+                                <p>To create a realistic looking scene, I first built a simple table. I added a plane with fabric physics in blender to quickly create the napkin. I made the hand fairly low poly but spent some time making a great normal map.</p>
+                                <p>The light bulbs use a custom shader with an orange emissive color multiplied to a fresnel effect, so that it glows on the edges. I added a bit of variations over time and some reflections. The filament on the inside is a 2D texture with emissive. Using a Bloom/Glow and a fog post process effects, it gives a strong mood to the scene.</p>
+                            </div>
+                            <p class="animate-box"><img src="/images/intothelight/IntoTheLightScene.jpg" alt="IntoTheLight Early Progress" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                                <h2>Results</h2>
+                                <p>Pending...</p>
+                                <div class="col-md-12">
+                                    <div class="col-md-12 animate-box skills">
+                                        <h4 class="uppercase">Overall</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="95.5" aria-valuemin="0" aria-valuemax="100" style="width:95.5%">
+                                                0 / 806
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 animate-box skills">
+                                        <h4 class="uppercase">Fun</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="91.5" aria-valuemin="0" aria-valuemax="100" style="width:91.5%">
+                                                0 / 806
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 animate-box skills">
+                                        <h4 class="uppercase">Innovation</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="95.5" aria-valuemin="0" aria-valuemax="100" style="width:95.5%">
+                                                0 / 806
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 animate-box skills">
+                                        <h4 class="uppercase">Theme</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="76.6" aria-valuemin="0" aria-valuemax="100" style="width:76.6%">
+                                                0 / 806
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 animate-box skills">
+                                        <h4 class="uppercase">Graphics</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width:89%">
+                                                0 / 806
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 animate-box skills">
+                                        <h4 class="uppercase">Audio</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width:91%">
+                                                0 / 806
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 animate-box skills">
+                                        <h4 class="uppercase">Humor</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width:97%">
+                                                0 / 806
+                                            </div>
+                                        </div>
+                                    </div>
+                                        <div class="col-md-12 animate-box skills">
+                                        <h4 class="uppercase">Mood</h4>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width:88%">
+                                                0 / 806
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-pt-md portfolio-navigation">
+                            <div class="col-xs-4 text-left">
+                                <a href="/index.html" class="btn btn-primary btn-outline"><i class="icon-chevron-left"></i> Prev </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        </div>
+
+        <!-- jQuery -->
+        <script src="/js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="/js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="/js/jquery.waypoints.min.js"></script>
+        <!-- Main -->
+        <script src="/js/main.js"></script>
+    </body>
+</html>
+
