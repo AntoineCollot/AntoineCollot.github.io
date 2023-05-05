@@ -1312,4 +1312,10 @@ blockquote .person cite {
   margin: 0 0 5px 0;
 }
 
+pixelart {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
 /*# sourceMappingURL=style.css.map */
