@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AntoineCollot &mdash; Portfolio website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Portfolio website" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="AntoineCollot" />
+
+        <!-- 
+//////////////////////////////////////////////////////
+
+FREE HTML5 TEMPLATE 
+DESIGNED & DEVELOPED by FreeHTML5.co
+
+Website: 		http://freehtml5.co/
+Email: 			info@freehtml5.co
+Twitter: 		http://twitter.com/fh5co
+Facebook: 		https://www.facebook.com/fh5co
+
+//////////////////////////////////////////////////////
+-->
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="/css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="/css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="/js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+    <body>
+
+        <div class="fh5co-loader"></div>
+
+        <div id="page">
+                 <nav class="fh5co-nav" role="navigation">
+                <div class="container">
+                    <div class="fh5co-top-logo">
+                        <div id="fh5co-logo"><a href="/index.html">Antoine Collot</a></div>
+                    </div>
+                    <div class="fh5co-top-menu menu-1 text-center">
+                        <ul>
+                            <li><a href="/index.html">Work</a></li>
+                            <li><a href="/about.html">Profile</a></li>
+                            <li><a href="/presskit/index.html">Presskits</a></li>
+                        </ul>
+                    </div>
+                    <div class="fh5co-top-social menu-1 text-right">
+                        <ul class="fh5co-social">
+                            <li><a href="https://yorsh.itch.io/"><i class="icon-game-controller"></i></a></li>
+                            <li><a href="https://github.com/AntoineCollot"><i class="icon-github"></i></a></li>
+                            <li><a href="https://twitter.com/YorshInGame"><i class="icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="fh5co-author">
+                <div class="container">
+                    <div class="row top-line animate-box">
+                        <div class="col-md-6 col-md-offset-3 fh5co-heading">
+                            <h2>textures_failed_to_load</h2>
+                            <h3 class="uppercase">Ludum Dare 54 (48h) - Theme : Limited Space</h3>
+                            <p>My submission for the Ludum Dare 54 Game Jam. I had 48h to make this game from scratch.</p>
+
+                            <div class="role">
+                                <h3>Key points</h3>
+                                <ul>
+                                    <li>Unity</li>
+                                    <li>Game Jam</li>
+                                    <li>Made in 48h</li>
+                                    <li>Top Down Shooter - Puzzle</li>
+                                </ul>
+                            </div>
+                            <a href="https://ldjam.com/events/ludum-dare/54/textures-failed-to-load" class="btn btn-primary btn-outline"><i class="icon-game-controller"></i> Game Jam page</a>
+                            <a href="https://yorsh.itch.io/textures-failed-to-load-disk1" class="btn btn-primary btn-outline"><i class="icon-download"></i> Play the game</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/9ooCMqfGPXo?si=wuBb2-FabjO-N63k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="testimony animate-box">
+                                <h2>Theme : Limited Space</h2>
+                                <p>The main idea of this theme would be to make a game with small levels. While it can be interesting, I tried to go a bit deeper and chose to make a game that runs with limited memory space. The game would fail to load the textures (which can be the heaviest part of a game), resulting in a game with white squares instead of sprites. The player would have to pick up RAM boost around the levels to load each sprite individually and reveal the textures.</p>
+                            </div>
+                            <p class="animate-box"><img src="/images/texturesfailedtoload/textures_failed_to_load_screenshot0.jpg" alt="Gameplay" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                                <h2>Textures</h2>
+                                <p>Even tho the textures are hidden at the start, I still went for a fairly detailled pixel art style (which can be time consumming). It could be a waste of time since the player may not even see the textures. However I figured that if the textures are pretty, it would drive the player to find more RAM and progress in the game to unlock them all.</p>
+                                <p>To achieve the effect of missing textures, I used a custom sprite shader. The shader has 3 states: <i>Unloaded</i> (white, no alpha), <i>Hovered</i> (glowing pink when hovered by the mouse) and <i>Loaded</i> (basic sprite shader), which each object of the scene can update during runtime. For some reasons, even tho the <i>Unloaded</i> textures have no alpha, there is still clipping happening somewhere so the sprites are not perfect squares. It wasn't planned but it's even better because it shows the animations while being very abstract.</p>
+                            </div>
+                                 <p class="animate-box"><img src="/images/texturesfailedtoload/textures_failed_to_load_screenshot1.jpg" alt="Gameplay" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                               <h2>Gameplay</h2>
+                                <p>Most of the game is a basic top down shooter. Initially I wanted to make enemies difficult to fight when their textures are missing, so the player would have to choose which one to reveal with their limited RAM (which I couldn't achieve in time). To have the texture mechanic be more relevant to the gameplay, I added a few puzzles in some levels. Puzzles are made easier the more you reveal relevant textures, but they are somewhat doable with missing textures.</p>
+                            </div>
+                               <p class="animate-box"><img src="/images/texturesfailedtoload/textures_failed_to_load_screenshot4.jpg" alt="Level editor" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                                <h2>Results</h2>
+                                <p>Pending...</p>
+                               
+                            </div>
+                        </div>
+                        <div class="row row-pt-md portfolio-navigation">
+                            <div class="col-xs-4 text-left">
+                                <a href="/index.html" class="btn btn-primary btn-outline"><i class="icon-chevron-left"></i> Prev </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        </div>
+
+        <!-- jQuery -->
+        <script src="/js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="/js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="/js/jquery.waypoints.min.js"></script>
+        <!-- Main -->
+        <script src="/js/main.js"></script>
+    </body>
+</html>
+
