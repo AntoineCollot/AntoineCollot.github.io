@@ -10,6 +10,15 @@
 * 	Template Style 
 *
 * ======================================================= */
+recap{
+    color: #ea7659;
+    color: #14385a;
+    color: #ffe6c3aa;
+    color: #14385a;
+    color: #ffc97c;
+}
+
+
 body {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 300;
@@ -48,13 +57,13 @@ body {
 }
 
 a {
-  color: #cabcab;
+  color: #14385a;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #cabcab;
+  color: #14385a;
   outline: none;
   text-decoration: none;
 }
@@ -92,7 +101,7 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   padding: 25px 0;
   z-index: 1;
-  background: #f2ede5aa;
+  background: #ffe6c3aa;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -269,7 +278,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 .fh5co-nav ul li.active > a {
-  color: #cabcab !important;
+  color: #14385a !important;
 }
 .fh5co-nav ul li .form-group {
   border: 1px solid red;
@@ -331,7 +340,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #cabcab;
+  color: #14385a;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -350,7 +359,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .fh5co-contact-info ul li:before {
-  color: #cabcab;
+  color: #14385a;
   position: absolute;
   left: 0;
   top: .05em;
@@ -392,7 +401,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-about,
 #fh5co-contact,
 #fh5co-footer {
-  padding: 7em 0;
+  padding: 5em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -417,7 +426,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .feature-center .icon {
   width: 90px;
   height: 90px;
-  background: #cabcab;
+  background: #14385a;
   display: table;
   text-align: center;
   margin-bottom: 30px;
@@ -653,7 +662,7 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 1px;
 }
 .author .desc .fh5co-social-icons li a {
-  color: #cabcab;
+  color: #14385a;
   padding-left: 0;
   padding-right: 10px;
 }
@@ -679,7 +688,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-started {
-  background: #cabcab;
+  background: #d3e6f8;
 }
 #fh5co-started .fh5co-heading {
   margin-bottom: 20px !important;
@@ -694,8 +703,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-started .btn {
   margin-top: 20px;
-  border: 3px solid #8c7961;
-  color: #8c7961;
+  border: 3px solid #d3e6f8;
+  color: #d3e6f8;
   font-size: 20px;
   font-weight: 400;
   padding: 20px 0;
@@ -703,13 +712,13 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-right: 70px;
 }
 #fh5co-started .btn:hover {
-  background: #8c7961 !important;
-  border: 3px solid #8c7961 !important;
+  background: #d3e6f8 !important;
+  border: 3px solid #d3e6f8 !important;
   color: #fff;
 }
 
 #fh5co-footer {
-  background: #f2ede5aa;
+  background: #ffe6c3aa;
       padding: 5em 0;
 }
 #fh5co-footer .fh5co-footer-links {
@@ -861,7 +870,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 10px 6px;
   line-height: 0;
   font-size: 11px;
-  background: #cabcab;
+  background: #14385a;
   color: white;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -907,7 +916,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .uppercase {
   font-size: 14px;
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -1099,6 +1108,11 @@ h1, h2, h3, h4, h5, h6, figure {
     background: #ea7659;
     color: #fff;
 }
+.btn-small {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 4px 10px;
+}
 
 .btn-success {
   background: #5cb85c;
@@ -1226,7 +1240,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #cabcab;
+  border-color: #14385a;
 }
 
 .row-pt-md {
