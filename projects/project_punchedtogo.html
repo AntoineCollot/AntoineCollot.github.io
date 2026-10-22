@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AntoineCollot &mdash; Portfolio website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Portfolio website" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="AntoineCollot" />
+
+        <!-- 
+//////////////////////////////////////////////////////
+
+FREE HTML5 TEMPLATE 
+DESIGNED & DEVELOPED by FreeHTML5.co
+
+Website: 		http://freehtml5.co/
+Email: 			info@freehtml5.co
+Twitter: 		http://twitter.com/fh5co
+Facebook: 		https://www.facebook.com/fh5co
+
+//////////////////////////////////////////////////////
+-->
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="/css/animate.css">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="/css/icomoon.css">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="/css/style.css">
+
+        <!-- Modernizr JS -->
+        <script src="/js/modernizr-2.6.2.min.js"></script>
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+    <body>
+
+        <div class="fh5co-loader"></div>
+
+        <div id="page">
+                  <nav class="fh5co-nav" role="navigation">
+                <div class="container">
+                    <div class="fh5co-top-logo">
+                        <div id="fh5co-logo"><a href="/index.html">Antoine Collot</a></div>
+                    </div>
+                    <div class="fh5co-top-menu menu-1 text-center">
+                        <ul>
+                            <li><a href="/index.html">Work</a></li>
+                            <li><a href="/about.html">Profile</a></li>
+                            <li><a href="/presskit/index.html">Presskits</a></li>
+                        </ul>
+                    </div>
+                    <div class="fh5co-top-social menu-1 text-right">
+                        <ul class="fh5co-social">
+                            <li><a href="https://yorsh.itch.io/"><i class="icon-game-controller"></i></a></li>
+                            <li><a href="https://github.com/AntoineCollot"><i class="icon-github"></i></a></li>
+                            <li><a href="https://twitter.com/YorshInGame"><i class="icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="fh5co-author">
+                <div class="container">
+                    <div class="row top-line animate-box">
+                        <div class="col-md-6 col-md-offset-3 fh5co-heading">
+                            <h2>Punched To Go</h2>
+                            <h3 class="uppercase">Ludum Dare 60 (48h) - Theme : Old Tech</h3>
+                            <p>My submission for the LD60 gmejam. I had 48h to make this game. I made a mini retro game playable on an old punched cards machine.</p>
+
+                            <div class="role">
+                                <h3>Key points</h3>
+                                <ul>
+                                    <li>Unity</li>
+                                    <li>Game Jam</li>
+                                    <li>Made in 48h</li>
+                                    <li>Puzzle</li>
+                                </ul>
+                            </div>
+                            <a href="https://ldjam.com/events/ludum-dare/60/punched-to-go" class="btn btn-primary btn-outline"><i class="icon-game-controller"></i> Game Jam page</a>
+                            <a href="https://yorsh.itch.io/punched-to-go" class="btn btn-primary btn-outline"><i class="icon-download"></i> Play the game</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <iframe width="100%" height="400" src="https://www.youtube.com/embed/iwDWbb82mSA?si=0AfwrjPgSJbHaKXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="testimony animate-box">
+                                <h2>Theme : Old Tech</h2>
+                                <p>I though of using Punched Cards somehow for this theme, as it's a fascinating piece of tech that also happens to be very flexible with what you can do with them. I ended up using them to send inputs to a pretty classic retro mini game. Holes in the cards would count as 1 in binary, so then I could map anything I wanted to those punched binary values.</p>
+                            </div>
+                            <p class="animate-box"><img src="/images/punchedtogo/PunchedToGoCard.jpg" alt="Card" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                            <h2>Mini Game</h2>
+                                <p>Because there were so many ways to toy with binary values hidden behind a mysterious punch system, I though of making the mini game itself be a puzzle game. To progress, you would have to figure out how to use the punches on the card in new ways everytime (eg. you have to realize that the binary values can map to an asccii like code for the alphabet, so that you can say things in game).</p>
+                            </div>
+                            <p class="animate-box"><img src="/images/punchedtogo/PunchedToGoMiniGame.jpg" alt="MiniGame" class="img-responsive" width = "100%"></p>
+                            <div class="testimony animate-box">
+                                <h2>Punching the Cards</h2>
+                                <p>As I designed the cards to have 12x5 holes, I wanted to avoid having 60 items to fill in the holes. Instead I made all the hole fillers a single object, and clip out part of the objects based on a 12x5 texture (one pixel per hole). When I draw black onto the texture at this pixel, the pixels of the hole filler object is clipped (discarded), when I draw red it displays a highlighted version, and when I draw white it displays the basic albedo.</p>
+                            </div>
+                            <p class="animate-box"><img src="/images/punchedtogo/PunchedToGoShader.gif" alt="Shader" class="img-responsive" width = "50%"></p>
+                            <div class="testimony animate-box">
+                                <h2>Results</h2>
+                                <p>Pending...</p>
+                            </div>
+                        </div>
+                        <div class="row row-pt-md portfolio-navigation">
+                            <div class="col-xs-4 text-left">
+                                <a href="/index.html" class="btn btn-primary btn-outline"><i class="icon-chevron-left"></i> Prev </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gototop js-top">
+            <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        </div>
+
+        <!-- jQuery -->
+        <script src="/js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="/js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="/js/jquery.waypoints.min.js"></script>
+        <!-- Main -->
+        <script src="/js/main.js"></script>
+    </body>
+</html>
+
